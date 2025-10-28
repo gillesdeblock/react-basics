@@ -1,9 +1,8 @@
-import './ColorPicker.css';
 import ColorPickerPreview from './ColorPickerPreview';
 
 function ColorPicker({ value, onInput = () => {} }) {
     return (
-        <div className="color-picker">
+        <div className="flex gap-2 items-center">
             <input
                 type="color"
                 value={value}
