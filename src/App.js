@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ColorPicker from './color-picker/ColorPicker';
 import Exercise from './exercise/Exercise';
 import List from './list/List';
+import CountdownTimer from './countdown/CountdownTimer';
 
 function App() {
   const [color, setColor] = useState('#000000');
@@ -14,6 +15,9 @@ function App() {
         </Exercise>
         <Exercise title="Movie List">
           <List items={['Bring Her Back', 'The Terminator', 'Prisoners', 'Finding Nemo']}></List>
+        </Exercise>
+        <Exercise title="Countdown Timer">
+          <CountdownTimer></CountdownTimer>
         </Exercise>
       </div>
     </div>
