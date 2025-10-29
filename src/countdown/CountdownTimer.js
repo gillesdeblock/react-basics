@@ -68,7 +68,7 @@ function CountdownTimerInput({ seconds, disabled, onInput }) {
 
 function CountdownTimerButton({ disabled, onClick, children }) {
     return <button
-        className="border px-2 py-1 hover:bg-gray-50 active:focus:bg-gray-100 disabled:bg-gray-100"
+        className="btn"
         disabled={disabled}
         onClick={onClick}
     >

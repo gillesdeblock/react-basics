@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -16,4 +20,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.btn {
+  @apply border px-2 py-1 bg-gray-700 hover:bg-gray-700/80 active:focus:bg-gray-700/70 text-white font-semibold;
 }

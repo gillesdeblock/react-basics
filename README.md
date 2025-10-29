@@ -8,12 +8,8 @@ This project contains exercises practicing the basics of react.
 
 ### Color Picker
 
-Create a simple color picker that also displays the selected color as a HEX code.
-
 ### Movie list with filtering
-
-Create a list of movies that also supports filtering by name.
 
 ### Countdown timer
 
-Create a countdown timer that counts down the given seconds.
+### Random quote generator
