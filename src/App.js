@@ -7,6 +7,7 @@ import RandomQuoteGenerator from './random-quote-generator/RandomQuoteGenerator'
 import DarkModeApp from './dark-mode/DarkModeApp';
 import AccordionGroup from './accordion/AccordionGroup';
 import Accordion from './accordion/Accordion';
+import TemperatureConverter from './temperature-converter/TemperatureConverter';
 
 function App() {
   const [color, setColor] = useState('#000000');
@@ -35,6 +36,9 @@ function App() {
             <Accordion id="2" title="Second accordion">Lorem ipsum dolor sit amet</Accordion>
             <Accordion id="3" title="Third accordion">Lorem ipsum dolor sit amet</Accordion>
           </AccordionGroup>
+        </Exercise>
+        <Exercise title="Temperature converter">
+          <TemperatureConverter></TemperatureConverter>
         </Exercise>
       </div>
     </div>
