@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import Exercise from './exercise/Exercise';
-import ColorPicker from './color-picker/ColorPicker';
-import List from './list/List';
-import CountdownTimer from './countdown/CountdownTimer';
-import RandomQuoteGenerator from './random-quote-generator/RandomQuoteGenerator';
-import DarkModeApp from './dark-mode/DarkModeApp';
-import AccordionGroup from './accordion/AccordionGroup';
-import Accordion from './accordion/Accordion';
-import TemperatureConverter from './temperature-converter/TemperatureConverter';
+import Exercise from './Exercise';
+import ColorPicker from './exercises/color-picker/ColorPicker';
+import List from './exercises/list/List';
+import CountdownTimer from './exercises/countdown/CountdownTimer';
+import RandomQuoteGenerator from './exercises/random-quote-generator/RandomQuoteGenerator';
+import DarkModeApp from './exercises/dark-mode/DarkModeApp';
+import AccordionGroup from './exercises/accordion/AccordionGroup';
+import Accordion from './exercises/accordion/Accordion';
+import TemperatureConverter from './exercises/temperature-converter/TemperatureConverter';
 
 function App() {
   const [color, setColor] = useState('#000000');

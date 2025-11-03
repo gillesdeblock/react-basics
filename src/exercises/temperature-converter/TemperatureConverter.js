@@ -4,8 +4,8 @@ function TemperatureConverter() {
     const toCelsius = value => ((value - 32) * 5) / 9;
     const toFahrenheit = value => (value * 9) / 5 + 32;
 
-    const [celsius, setCelsius] = useState();
-    const [fahrenheit, setFahrenheit] = useState();
+    const [celsius, setCelsius] = useState(0);
+    const [fahrenheit, setFahrenheit] = useState(toFahrenheit(celsius));
 
     const onInputCelsius = (value) => {
         setCelsius(value);
