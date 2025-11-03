@@ -22,7 +22,7 @@ function RandomQuoteGenerator() {
     const generateQuote = () => setIndex(randomizeIndex(quotes.length, index));
 
     return (
-        <div className="flex flex-col self-start gap-2 items-center w-96 border p-2">
+        <div className="flex flex-col self-start gap-2 items-center w-96 border p-2 bg-white">
             {quote && <Quote quote={quote}></Quote> || <span>No quote set.</span>}
             <button className="btn" onClick={generateQuote}>New quote</button>
         </div>

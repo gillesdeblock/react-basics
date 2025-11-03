@@ -57,7 +57,7 @@ function CountdownTimerInput({ seconds, disabled, onInput }) {
     return (
         <input
             type="number"
-            className="outline-none px-2 py-1 border bg-transparent"
+            className="outline-none px-2 py-1 border bg-white"
             value={seconds}
             onInput={onInput}
             min={1}

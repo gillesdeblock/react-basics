@@ -1,6 +1,6 @@
 function ListSearch({ value, onInput }) {
     return (
-        <div className="flex items-center px-2 py-1 gap-2 bg-gray-50">
+        <div className="flex items-center px-2 py-1 gap-2 bg-gray-100">
             <input
                 className="outline-none bg-transparent"
                 type="text"

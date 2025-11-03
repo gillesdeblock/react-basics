@@ -5,13 +5,15 @@ import List from './list/List';
 import CountdownTimer from './countdown/CountdownTimer';
 import RandomQuoteGenerator from './random-quote-generator/RandomQuoteGenerator';
 import DarkModeApp from './dark-mode/DarkModeApp';
+import AccordionGroup from './accordion/AccordionGroup';
+import Accordion from './accordion/Accordion';
 
 function App() {
   const [color, setColor] = useState('#000000');
 
   return (
-    <div className="p-6 bg-gray-50  h-full">
-      <div className="flex flex-col gap-4">
+    <div className="p-6 h-full">
+      <div className="flex flex-col gap-4 h-full overflow-auto">
         <Exercise title="Color Picker">
           <ColorPicker value={color} onInput={setColor} />
         </Exercise>
@@ -26,6 +28,13 @@ function App() {
         </Exercise>
         <Exercise title="Dark mode toggle">
           <DarkModeApp></DarkModeApp>
+        </Exercise>
+        <Exercise title="Accordion">
+          <AccordionGroup>
+            <Accordion id="1" title="First accordion">Lorem ipsum dolor sit amet</Accordion>
+            <Accordion id="2" title="Second accordion">Lorem ipsum dolor sit amet</Accordion>
+            <Accordion id="3" title="Third accordion">Lorem ipsum dolor sit amet</Accordion>
+          </AccordionGroup>
         </Exercise>
       </div>
     </div>

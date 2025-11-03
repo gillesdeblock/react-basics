@@ -7,7 +7,7 @@ export function List({ items = [] }) {
     const filteredItems = items.filter((item) => item.toLowerCase().trim().includes(search.toLowerCase().trim()))
 
     return (
-        <div className="flex flex-col border self-start">
+        <div className="flex flex-col border self-start bg-white">
             <ListSearch value={search} onInput={setSearch}></ListSearch>
             {
                 filteredItems.length
